@@ -1,0 +1,36 @@
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                font-family: 'SimHei', 'Microsoft YaHei', 'Arial', 'sans-serif';
+                /* 避免移动端操作误选中问题 */
+                -webkit-user-select: none; /* Safari */
+                -ms-user-select: none; /* IE 10+ and Edge */
+                user-select: none; /* Standard syntax */
+            }
+            #container {
+                display: flex;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </header>
+    <body>
+        <div id="container">
+        </div>
+    </body>
+    <script type="text/javascript" src="./tGame.js"></script>
+    <script type="text/javascript" src="./wGame.js"></script>
+    <script type="text/javascript" src="./zegoGame.min.js"></script>
+</html>
+

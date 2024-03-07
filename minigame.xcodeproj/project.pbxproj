@@ -7,15 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		862BC1612B99B45F0075D6CC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 862BC1602B99B45F0075D6CC /* Alamofire */; };
+		862BC1682B99E03C0075D6CC /* ZegoConnection.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862BC1642B99B6510075D6CC /* ZegoConnection.xcframework */; };
+		862BC1692B99E03C0075D6CC /* ZegoConnection.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 862BC1642B99B6510075D6CC /* ZegoConnection.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		862BC16A2B99E03E0075D6CC /* ZegoMiniGameEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862BC1652B99B6520075D6CC /* ZegoMiniGameEngine.xcframework */; };
+		862BC16B2B99E03E0075D6CC /* ZegoMiniGameEngine.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 862BC1652B99B6520075D6CC /* ZegoMiniGameEngine.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		865E99D32B46655D005EF454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E99D22B46655D005EF454 /* AppDelegate.swift */; };
 		865E99D52B46655D005EF454 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E99D42B46655D005EF454 /* SceneDelegate.swift */; };
 		865E99D72B46655D005EF454 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E99D62B46655D005EF454 /* ViewController.swift */; };
 		865E99DA2B46655D005EF454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865E99D82B46655D005EF454 /* Main.storyboard */; };
 		865E99DC2B46655E005EF454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865E99DB2B46655E005EF454 /* Assets.xcassets */; };
 		865E99DF2B46655E005EF454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865E99DD2B46655E005EF454 /* LaunchScreen.storyboard */; };
+		86F3E8A92B95D3BD0004830B /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F3E8A82B95D3BD0004830B /* KeyCenter.swift */; };
+		86F3E8AB2B95DAD00004830B /* ZegoRTCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F3E8AA2B95DAD00004830B /* ZegoRTCManager.swift */; };
+		86FC10E52B88A5AC00DA8631 /* ZegoExpressEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FC10E32B88A5A500DA8631 /* ZegoExpressEngine.xcframework */; };
+		86FC10E62B88A5AC00DA8631 /* ZegoExpressEngine.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86FC10E32B88A5A500DA8631 /* ZegoExpressEngine.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF6F357B2B98C9A800C5685F /* GameViewContrroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F357A2B98C9A800C5685F /* GameViewContrroller.swift */; };
+		BF6F357D2B98CE8B00C5685F /* ZegoGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F357C2B98CE8B00C5685F /* ZegoGameManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		86FC10E72B88A5AC00DA8631 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				862BC1692B99E03C0075D6CC /* ZegoConnection.xcframework in Embed Frameworks */,
+				862BC16B2B99E03E0075D6CC /* ZegoMiniGameEngine.xcframework in Embed Frameworks */,
+				86FC10E62B88A5AC00DA8631 /* ZegoExpressEngine.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		862BC1642B99B6510075D6CC /* ZegoConnection.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ZegoConnection.xcframework; sourceTree = "<group>"; };
+		862BC1652B99B6520075D6CC /* ZegoMiniGameEngine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ZegoMiniGameEngine.xcframework; sourceTree = "<group>"; };
 		865E99CF2B46655D005EF454 /* minigame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minigame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865E99D22B46655D005EF454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		865E99D42B46655D005EF454 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +53,11 @@
 		865E99DB2B46655E005EF454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		865E99DE2B46655E005EF454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		865E99E02B46655E005EF454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86F3E8A82B95D3BD0004830B /* KeyCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = "<group>"; };
+		86F3E8AA2B95DAD00004830B /* ZegoRTCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZegoRTCManager.swift; sourceTree = "<group>"; };
+		86FC10E32B88A5A500DA8631 /* ZegoExpressEngine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ZegoExpressEngine.xcframework; sourceTree = "<group>"; };
+		BF6F357A2B98C9A800C5685F /* GameViewContrroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewContrroller.swift; sourceTree = "<group>"; };
+		BF6F357C2B98CE8B00C5685F /* ZegoGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZegoGameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86FC10E52B88A5AC00DA8631 /* ZegoExpressEngine.xcframework in Frameworks */,
+				862BC1612B99B45F0075D6CC /* Alamofire in Frameworks */,
+				862BC1682B99E03C0075D6CC /* ZegoConnection.xcframework in Frameworks */,
+				862BC16A2B99E03E0075D6CC /* ZegoMiniGameEngine.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +94,38 @@
 		865E99D12B46655D005EF454 /* minigame */ = {
 			isa = PBXGroup;
 			children = (
+				862BC1642B99B6510075D6CC /* ZegoConnection.xcframework */,
+				862BC1652B99B6520075D6CC /* ZegoMiniGameEngine.xcframework */,
+				BF6F357A2B98C9A800C5685F /* GameViewContrroller.swift */,
+				86F3E8A22B95D3230004830B /* Tool */,
+				86FC10E22B88A58E00DA8631 /* lib */,
 				865E99D22B46655D005EF454 /* AppDelegate.swift */,
 				865E99D42B46655D005EF454 /* SceneDelegate.swift */,
 				865E99D62B46655D005EF454 /* ViewController.swift */,
+				86F3E8AA2B95DAD00004830B /* ZegoRTCManager.swift */,
 				865E99D82B46655D005EF454 /* Main.storyboard */,
 				865E99DB2B46655E005EF454 /* Assets.xcassets */,
 				865E99DD2B46655E005EF454 /* LaunchScreen.storyboard */,
 				865E99E02B46655E005EF454 /* Info.plist */,
+				BF6F357C2B98CE8B00C5685F /* ZegoGameManager.swift */,
 			);
 			path = minigame;
+			sourceTree = "<group>";
+		};
+		86F3E8A22B95D3230004830B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				86F3E8A82B95D3BD0004830B /* KeyCenter.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		86FC10E22B88A58E00DA8631 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				86FC10E32B88A5A500DA8631 /* ZegoExpressEngine.xcframework */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +138,16 @@
 				865E99CB2B46655D005EF454 /* Sources */,
 				865E99CC2B46655D005EF454 /* Frameworks */,
 				865E99CD2B46655D005EF454 /* Resources */,
+				86FC10E72B88A5AC00DA8631 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = minigame;
+			packageProductDependencies = (
+				862BC1602B99B45F0075D6CC /* Alamofire */,
+			);
 			productName = minigame;
 			productReference = 865E99CF2B46655D005EF454 /* minigame.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +176,9 @@
 				Base,
 			);
 			mainGroup = 865E99C62B46655D005EF454;
+			packageReferences = (
+				862BC15F2B99B45F0075D6CC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 865E99D02B46655D005EF454 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F3E8AB2B95DAD00004830B /* ZegoRTCManager.swift in Sources */,
+				BF6F357B2B98C9A800C5685F /* GameViewContrroller.swift in Sources */,
+				BF6F357D2B98CE8B00C5685F /* ZegoGameManager.swift in Sources */,
+				86F3E8A92B95D3BD0004830B /* KeyCenter.swift in Sources */,
 				865E99D72B46655D005EF454 /* ViewController.swift in Sources */,
 				865E99D32B46655D005EF454 /* AppDelegate.swift in Sources */,
 				865E99D52B46655D005EF454 /* SceneDelegate.swift in Sources */,
@@ -300,6 +372,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +401,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +437,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		862BC15F2B99B45F0075D6CC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		862BC1602B99B45F0075D6CC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 862BC15F2B99B45F0075D6CC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 865E99C72B46655D005EF454 /* Project object */;
 }

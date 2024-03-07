@@ -1,0 +1,6 @@
+framework module ZegoMiniGameEngine {
+  umbrella header "ZegoMiniGameEngine.h"
+
+  export *
+  module * { export * }
+}
